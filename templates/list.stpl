@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Home</title>
+  </head>
+  <body>
+    <% include!("./navbar.stpl"); %>
+
+    <h1>Persons List</h1>
+    <ol>
+    <% for (index, person) in persons.iter().enumerate() {%>
+      <li><%= person %> <a href="/delete/<%= index %>">delete</a></li>
+    <% } %>
+    </ol>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Home</title>
+  </head>
+  <body>
+    <% include!("./navbar.stpl"); %>
+
+    <h1>Add Person</h1>
+    <form method="POST" action="/add">
+      <input type="text" name="name">
+      <input type="submit" value="add">
+    </form>
+
+  </body>
+</html>
